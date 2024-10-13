@@ -22,7 +22,7 @@
 # Инструкция по установке
 1. Скачайте файл шаблона:
 ```sh
-sudo wget -N -P /var/lib/marzban/templates/subscription/ https://raw.githubusercontent.com/WhyMan1/marzban-template/master/subscription/index.html
+sudo wget -N -P /var/lib/marzban/templates/subscription/ https://raw.githubusercontent.com//DigneZzZ/marzneshin-template-ru/master/subscription/index.html
 ```
 
 2. Выполните следующие команды в терминале вашего сервера:

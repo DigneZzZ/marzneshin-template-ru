@@ -8,7 +8,7 @@
 
 1. Скачайте файл шаблона:
 ```sh
-sudo wget -N -P /var/lib/marzneshin/templates/subscription/ https://raw.githubusercontent.com/MatinDehghanian/marzneshin-template/master/subscription/index.html
+sudo wget -N -P /var/lib/marzneshin/templates/subscription/ https://raw.githubusercontent.com/DigneZzZ/marzneshin-template-ru/master/subscription/index.html
 ```
 
 2. Выполните следующие команды в терминале вашего сервера:

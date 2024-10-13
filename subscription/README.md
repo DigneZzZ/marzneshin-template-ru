@@ -6,47 +6,42 @@
     </picture>
   </a>
 </p>
-<h1 align="center"/>قالب سابسکریپشن برای پنل  <a href="https://github.com/Gozargah/Marzban">مرزبان</a></h1>
+<h1 align="center">Шаблон подписки для панели <a href="https://github.com/Gozargah/Marzban">Marzban</a></h1>
 
-## فهرست مطالب
-- [ویژگی‌ ها](#ویژگی-ها)
-- [مراحل نصب](#مراحل-نصب)
+## Содержание
+- [Особенности](#особенности)
+- [Инструкция по установке](#инструкция-по-установке)
 
-# مقدمه
-یک قالب html ساده برای نمایش بهتر اطلاعات کاربر
+# Введение
+Простой HTML-шаблон для улучшенного отображения информации о пользователе.
 
-# ویژگی ها
-- افزودن سریع لینک سابسکریپشن به برنامه sing-box
-- لینک دانلود اپلیکیشن مورد نیاز
+# Особенности
+- Быстрое добавление ссылки на подписку в приложение sing-box
+- Ссылки на загрузку необходимых приложений
 
-# مراحل نصب
-1. دانلود فایل template
+# Инструкция по установке
+1. Скачайте файл шаблона:
 ```sh
 sudo wget -N -P /var/lib/marzban/templates/subscription/ https://raw.githubusercontent.com/WhyMan1/marzban-template/master/subscription/index.html
 ```
 
-2. دستورات زیر رو تو ترمینال سرورتون بزنید:
+2. Выполните следующие команды в терминале вашего сервера:
 ```sh
 echo 'CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzban/templates/"' | sudo tee -a /opt/marzban/.env
 echo 'SUBSCRIPTION_PAGE_TEMPLATE="subscription/index.html"' | sudo tee -a /opt/marzban/.env
 ```
-یا مقادیر زیر رو در فایل `.env` در پوشه `/opt/marzban` قرار بدین
+или добавьте следующие значения в файл `.env` в директории `/opt/marzban`:
 ```sh
 CUSTOM_TEMPLATES_DIRECTORY="/var/lib/marzban/templates/"
 SUBSCRIPTION_PAGE_TEMPLATE="subscription/index.html"
 ```
 
-3. ری استارت مرزبان
+3. Перезапустите Marzban:
 ```sh
 marzban restart
 ```
 
-## بروزرسانی
-برای بروزرسانی تمپلیت فقط کافیست مرحله 1 را تکرار کنید.
+## Обновление
+Для обновления шаблона достаточно повторить первый шаг.
 
 
-# حمایت از من
-
-<a href="https://nowpayments.io/donation?api_key=WE3KFT5-2VKMNSF-N1P4YQ6-24N82ZA&source=lk_donation&medium=referral" target="_blank">
-  <img src="https://nowpayments.io/images/embeds/donation-button-black.svg" alt="Crypto donation button by NOWPayments">
-</a>
